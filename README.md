@@ -47,12 +47,11 @@ This project implements a smart contract on the Hedera Hashgraph network for a b
       sudo snap install solc
       solcjs --bin contracts/BettingGame.sol
     
-9. Now, For saving the **bytecode**, redirecting the output to a file for easier access
+9. Now, For saving the **bytecode**, redirecting the output to a file for easier access (it will give BettingGameBytecode.txt)
    ```bash
      solcjs --bin contracts/BettingGame.sol > BettingGameBytecode.txt
 
 10.
-   * it will give BettingGameBytecode.txt
    
    * Bytecode string is used in the deployment script to create a file transaction and then a contract on the Hedera network.
    
