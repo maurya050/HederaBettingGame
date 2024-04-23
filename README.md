@@ -20,14 +20,18 @@ This project implements a smart contract on the Hedera Hashgraph network for a b
     npm install --save @hashgraph/sdk dotenv
 
 4. Create a .env file with your Hedera account credentials:
-    MY_ACCOUNT_ID=Your-Account-ID
-    MY_PRIVATE_KEY=Your-Private-Key
-    ALICE_ACCOUNT_ID=Your-Alice-Account-ID
-    ALICE_PRIVATE_KEY=Your-Alice-Private-Key
-    BOB_ACCOUNT_ID=Your-Bob-Account-ID
-    BOB_PRIVATE_KEY=Your-Bob-Private-Key
-    CAROL_ACCOUNT_ID=Your-Carol-Account-ID
-    CAROL_PRIVATE_KEY=Your-Carol-Private-Key
+    MY_ACCOUNT_ID
+    MY_PRIVATE_KEY
+    MY_PUBLIC_KEY
+    ALICE_ACCOUNT_ID
+    ALICE_PRIVATE_KEY
+    ALICE_PUBLIC_KEY
+    BOB_ACCOUNT_ID
+    BOB_PRIVATE_KEY
+    BOB_PUBLIC_KEY
+    CAROL_ACCOUNT_ID
+    CAROL_PRIVATE_KEY
+    CAROL_PUBLIC_KEY
 
 6. Smart Contract in BettingGame.sol.
     - Use the Remix IDE to compile.
