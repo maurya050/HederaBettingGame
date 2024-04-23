@@ -29,11 +29,11 @@ This project implements a smart contract on the Hedera Hashgraph network for a b
     CAROL_ACCOUNT_ID=Your-Carol-Account-ID
     CAROL_PRIVATE_KEY=Your-Carol-Private-Key
 
-5. Smart Contract in BettingGame.sol.
+6. Smart Contract in BettingGame.sol.
     - Use the Remix IDE to compile.
     - Use contract **bytecode** from Remix in the deploy.js
 
-6. Install the Solidity compiler via npm to run on terminal (Alternative for the 5th step)
+7. Install the Solidity compiler via npm to run on terminal (Alternative for the 5th step)
     - npm install -g solc
     - sudo snap install solc
     - solcjs --bin contracts/BettingGame.sol 
