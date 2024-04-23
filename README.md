@@ -63,7 +63,7 @@ This project implements a smart contract on the Hedera Hashgraph network for a b
 
 11. Deploy the contract:
    ```bash
-    node scripts/deploy.js
+   node scripts/deploy.js
 
 12. Interact with the contract:
     ```bash
