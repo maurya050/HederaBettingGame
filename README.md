@@ -62,13 +62,14 @@ This project implements a smart contract on the Hedera Hashgraph network for a b
    * Now, we'll need the contract ID obtained during the deployment process. and we will use this ID to create and send transactions or calls to the contract functions defined in BettingGame.sol, such as placeBet, submitNumber.
 
 11. Deploy the contract:
-   ```bash
-   node scripts/deploy.js
-
-
+    ```bash
+    node scripts/deploy.js
+    ```
 
 12. Interact with the contract:
     ```bash
-    node scripts/deploy.js
+    node scripts/interact.js
+    ```
+
    
 
