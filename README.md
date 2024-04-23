@@ -14,12 +14,14 @@ This project implements a smart contract on the Hedera Hashgraph network for a b
    cd HederaBettingGame
 
 2. Install necessary dependencies:
+   ```bash
     npm install
 
-3. Install the Hedera Hashgraph SDK:
+4. Install the Hedera Hashgraph SDK:
+    ```bash
     npm install --save @hashgraph/sdk dotenv
 
-4. Create a .env file with your Hedera account credentials:
+6. Create a .env file with your Hedera account credentials:
     MY_ACCOUNT_ID
     MY_PRIVATE_KEY
     MY_PUBLIC_KEY
@@ -33,19 +35,21 @@ This project implements a smart contract on the Hedera Hashgraph network for a b
     CAROL_PRIVATE_KEY
     CAROL_PUBLIC_KEY
 
-6. Smart Contract in BettingGame.sol.
+7. Smart Contract in BettingGame.sol.
     - Use the Remix IDE to compile.
     - Use contract **bytecode**  getting after compilation from Remix in the deploy.js
 
-7. Install the Solidity compiler via npm to run on terminal (Alternative for the 5th step)
-    - npm install -g solc
-    - sudo snap install solc
-    - solcjs --bin contracts/BettingGame.sol 
-        * to compile the BettingGame.sol file
-        * it will give '(contracts_BettingGame_sol_BettingGame.bin)' file with bytecode in it.
+8. Install the Solidity compiler via npm to run on terminal (Alternative for the 5th step)
+    ```bash
+      npm install -g solc
+      sudo snap install solc
+     solcjs --bin contracts/BettingGame.sol 
+   * to compile the BettingGame.sol file
+    * it will give '(contracts_BettingGame_sol_BettingGame.bin)' file with bytecode in it.
     #### Now, For saving the **bytecode**, redirecting the output to a file for easier access
-    - solcjs --bin contracts/BettingGame.sol > BettingGameBytecode.txt
-        * it will give BettingGameBytecode.txt
+    ```bash
+     solcjs --bin contracts/BettingGame.sol > BettingGameBytecode.txt
+    * it will give BettingGameBytecode.txt
 
 * Bytecode string is used in the deployment script to create a file transaction and then a contract on the Hedera network.
 
