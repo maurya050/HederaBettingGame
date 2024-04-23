@@ -10,7 +10,7 @@ This project implements a smart contract on the Hedera Hashgraph network for a b
 ### Installation
 1. Clone the repository and navigate into the project directory:
    ```bash
-   git clone (Repo Link [clone project](https://github.com/maurya050/HederaBettingGame/))
+   git clone (Repo Link [Hedera Portal](https://github.com/maurya050/HederaBettingGame/))
    cd HederaBettingGame
 
 2. Install necessary dependencies:
