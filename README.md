@@ -40,28 +40,33 @@ This project implements a smart contract on the Hedera Hashgraph network for a b
     - Use contract **bytecode**  getting after compilation from Remix in the deploy.js
 
 8. Install the Solidity compiler via npm to run on terminal (Alternative for the 5th step)
+   * to compile the BettingGame.sol file
+   * it will give '(contracts_BettingGame_sol_BettingGame.bin)' file with bytecode in it.
     ```bash
       npm install -g solc
       sudo snap install solc
-     solcjs --bin contracts/BettingGame.sol 
-* to compile the BettingGame.sol file
-* it will give '(contracts_BettingGame_sol_BettingGame.bin)' file with bytecode in it.
-#### Now, For saving the **bytecode**, redirecting the output to a file for easier access
+      solcjs --bin contracts/BettingGame.sol
+    
+9. Now, For saving the **bytecode**, redirecting the output to a file for easier access
    ```bash
      solcjs --bin contracts/BettingGame.sol > BettingGameBytecode.txt
-* it will give BettingGameBytecode.txt
 
-* Bytecode string is used in the deployment script to create a file transaction and then a contract on the Hedera network.
+10.
+   * it will give BettingGameBytecode.txt
+   
+   * Bytecode string is used in the deployment script to create a file transaction and then a contract on the Hedera network.
+   
+   * Now, using the deploy script, we are executing the script to deploy our contract to the Hedera testnet. The deployment involves creating a file on Hedera to store the contract bytecode and then using that file ID to instantiate the contract.
+   
+   * Once your contract is deployed, you can interact with it using Hedera's SDK functions for contract calls and executions.
+   
+   * Now, we'll need the contract ID obtained during the deployment process. and we will use this ID to create and send transactions or calls to the contract functions defined in BettingGame.sol, such as placeBet, submitNumber.
 
-* Now, using the deploy script, we are executing the script to deploy our contract to the Hedera testnet. The deployment involves creating a file on Hedera to store the contract bytecode and then using that file ID to instantiate the contract.
-
-* Once your contract is deployed, you can interact with it using Hedera's SDK functions for contract calls and executions.
-
-* Now, we'll need the contract ID obtained during the deployment process. and we will use this ID to create and send transactions or calls to the contract functions defined in BettingGame.sol, such as placeBet, submitNumber.
-
-7. Deploy the contract: 
+11. Deploy the contract:
+   ```bash
     node scripts/deploy.js
 
-8. Interact with the contract:
+12. Interact with the contract:
+    ```bash
     node scripts/deploy.js
 
