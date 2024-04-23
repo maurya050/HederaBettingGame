@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@hashgraph/sdk": "^2.44.0",
+    "dotenv": "^16.4.5"
+  },
+  "name": "cs22m083_bettinggame",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
